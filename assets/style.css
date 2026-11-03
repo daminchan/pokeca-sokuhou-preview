@@ -78,7 +78,7 @@ img{max-width:100%;height:auto;display:block}
 .logo img{width:250px;height:60px}
 .site-name{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-/* ファーストビュー: X で見つけたパック/BOX 写真を扇状に並べたバナー */
+/* ファーストビュー: 公式サイトのパック/BOX 商品画像を扇状に並べたバナー */
 .firstview{
   height:226px;position:relative;overflow:hidden;
   background:
@@ -98,11 +98,11 @@ img{max-width:100%;height:auto;display:block}
   position:relative;z-index:1;height:100%;display:flex;align-items:center;justify-content:center;
   margin:0;padding:0 10px 4px;list-style:none;
 }
-.packs li{flex:none;margin:0 -10px;transform:rotate(var(--r,0deg)) translateY(var(--y,0));transition:transform .25s}
+.packs li{flex:none;margin:0 -3px;transform:rotate(var(--r,0deg)) translateY(var(--y,0));transition:transform .25s}
 .packs li:hover{transform:rotate(0deg) translateY(-6px) scale(1.06);z-index:2}
 .packs img{
-  height:var(--h,150px);width:auto;border:4px solid #fff;border-radius:8px;background:#fff;
-  box-shadow:0 2px 3px rgba(0,0,0,.25),0 12px 22px rgba(60,10,0,.38);
+  display:block;height:var(--h,150px);width:auto;
+  filter:drop-shadow(0 2px 2px rgba(0,0,0,.28)) drop-shadow(0 10px 12px rgba(60,10,0,.4));
 }
 .fv-txt{
   position:absolute;right:16px;bottom:13px;z-index:2;color:#fff;font-weight:900;font-size:11px;
@@ -363,8 +363,8 @@ h1{
   .logo img{width:200px;height:48px}
   .firstview{height:132px}
   .packs{justify-content:flex-start;padding-left:0}
-  .packs li{margin:0 -8px}
-  .packs img{height:calc(var(--h,150px)*.58);border-width:3px;border-radius:6px}
+  .packs li{margin:0 -5px}
+  .packs img{height:calc(var(--h,150px)*.62)}
   .fv-txt{display:none}
   .lead{margin:4px 12px 2px;padding:12px 13px 10px}
   .lead h2{font-size:15.5px}
